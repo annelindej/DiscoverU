@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="data.js"></script>
+        <script type="text/javascript" src="DiscoverU_javascript.js"></script>
+
+
+
+
+    </head>
+        
+    <body>
+        <img src="image/DiscoverU_logo.svg" alt="DiscoverU_logo"  width="80%">
+        <br><br><br> <b>Tussen alle nummers een spatie</b><br>
+        Vul in eerste pop up nummers van "technologie", "vrije tijd" en "toekomst":
+
+        <form>
+            <span>
+                <ul>
+                    <div class="row_profile">
+                        <div class="column_profile">
+                            <li><input type="button" onclick="tristate1(this)" id="t1" />
+                             <label for="t1"><img src="image/tokens/Profielkeuze.png" /></label>
+                            </li>
+                        </div>
+                        <div class="column_profile">
+                            <li><input type="checkbox" id="t2" />
+                             <label for="t2"><img src="image/tokens/Profielkeuze_1.png" /></label>
+                            </li>
+                         </div>
+                         <div class="column_profile">
+                            <li><input type="checkbox" id="t3" />
+                            <label for="t3"><img src="image/tokens/Profielkeuze_2.png" /></label>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="row_profile"">
+                        <div class="column_profile">
+                            <li><input type="checkbox" id="t4" />
+                            <label for="t4"><img src="image/tokens/Profielkeuze_3.png" /></label>
+                            </li>
+                       </div>
+                       <div class="column_profile">
+                            <li><input type="checkbox" id="t5" />
+                                <label for="t5"><img src="image/tokens/Profielkeuze_4.png" /></label>
+                            </li>
+                         </div>
+                        <div class="column_profile">
+                            <li><input type="checkbox" id="t75" />
+                                <label for="t75"><img src="image/tokens/Profielkeuze_5.png" /></label>
+                            </li>
+                         </div>
+                </div>
+                  </ul>
+        </form>
+        <br>
+        Vul in tweede pop up nummers van "past niet bij mij":
+            <form>
+                <input type="text" id="negative_tokens">
+            </form>
+
+            <button onclick="calculate_score()">Bereken</button>
+            <p> <b><div id = "result"></div></b></p> 
+            <p> <b><div id = "type"></div></b></p>
+ 
+
+
+
+    </body>
+
+
+
+</html>
